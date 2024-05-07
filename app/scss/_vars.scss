@@ -1,1 +1,58 @@
+/* Colors */
+$black: #141414;
+$accent: #E8AA31;
+$gray: #ABABAB;
+$dark-gray: #898989;
+$bg-gray: #ECF1F2;
+$green: #24AD53;
+$red: #E7401B;
 
+
+/* Text */
+
+%title {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 5px;
+}
+
+%subtitle {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+%mont-500 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%mont-600 {
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%mont-700 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Decor */
+
+%shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+%lighting {
+    box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+}
+
+%bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

@@ -4,13 +4,15 @@
 @import 'libs';
 @import 'global';
 @import 'mixins';
-@import 'btn';
 
 /* Pages */
 @import 'index';
 
 /* Components */
-@import 'header';
-@import 'footer';
+@import 'components/header';
+@import 'components/menu-nav';
+@import 'components/footer';
+@import 'components/btn';
 @import 'media';
+
 

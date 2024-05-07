@@ -1,7 +1,3 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
-
-$(function () {
-
-
-
-});
+//= components/form-styler.js
+//= components/header.js
