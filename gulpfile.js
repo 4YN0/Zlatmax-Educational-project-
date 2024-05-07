@@ -63,7 +63,7 @@ function images() {
 
 
 function sprite() {
-  return src('app/images/*.svg')
+  return src('app/images/icons/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -125,7 +125,7 @@ function building() {
         'app/images/*.webp',
         'app/images/**/*.webp',
         '!app/images/*.svg',
-        // 'app/images/sprite.svg',
+        'app/images/sprite.svg',
         'app/fonts/*.*',
         'app/js/main.min.js',
         'app/*.html'

@@ -1,0 +1,116 @@
+<nav class="header-top">
+    <div class="container">
+        <div class="header-top__inner">
+            <ul class="header-top__list">
+                <li class="header-top__item">
+                    <a class="header-top__link" href="#">О нас</a>
+                </li>
+                <li class="header-top__item">
+                    <a class="header-top__link" href="#">Оплата и доставка</a>
+                </li>
+                <li class="header-top__item">
+                    <a class="header-top__link" href="#">Новости</a>
+                </li>
+                <li class="header-top__item">
+                    <a class="header-top__link" href="#">Контакты</a>
+                </li>
+            </ul>
+
+            <a class="header-top__auth" href="#">
+                <svg class="header-top__auth-icon">
+                    <use xlink:href="images/sprite.svg#user-icon"></use>
+                </svg>
+                Личный кабинет</a>
+        </div>
+    </div>
+</nav> <!-- /.header__top -->
+
+<div class="header-main">
+    <div class="container">
+        <div class="header-main__inner">
+            <a class="logo" href="#">
+                <svg class="logo-img">
+                    <use xlink:href="images/sprite.svg#logo"></use>
+                </svg>
+            </a>
+
+            <form class="search-form" action="#" method="get">
+                <input class="search-form__input" type="text" placeholder="Поиск">
+            </form>
+
+            <div class="user-nav">
+                <a class="user-nav__location" href="#">
+                    <svg class="user-nav__location-icon">
+                        <use xlink:href="images/sprite.svg#location-icon"></use>
+                    </svg>
+                    <span>Москва</span>
+                </a>
+
+                <form class="user-nav__callback">
+                    <select class="user-nav__callback-select">
+                        <option class="user-nav__callback-option">8-800-777-49-67</option>
+                        <option class="user-nav__callback-option">8-800-777-49-67</option>
+                        <option class="user-nav__callback-option">8-800-777-49-67</option>
+                    </select>
+                    <a class="user-nav__callback-link" href="tel:+88007774967">Заказать звонок</a>
+                </form>
+
+                <a class="user-nav__favorites" href="#">
+                    <svg class="user-nav__favorites-icon">
+                        <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                    </svg>
+                </a>
+
+                <a class="user-nav__cart" href="#">
+                    <div class="user-nav__cart-box">
+                        <svg class="user-nav__cart-icon">
+                            <use xlink:href="images/sprite.svg#cart-icon"></use>
+                            <span class="user-nav__cart-sum">0</span>
+                        </svg>
+                    </div>
+                    <div class="user-nav__price-box">
+                        <div class="user-nav__price">
+                            <span class="user-nav__price-sum">0</span>
+                            <span class="user-nav__price-currency">р.</span>
+                            <span class="user-nav__cart-text">Оформить заказ</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> <!-- /.header__main -->
+
+<nav class="header-bottom">
+    <div class="container">
+        <ul class="header-bottom__menu">
+            <li class="header-bottom__menu-item" id="menu-knives">
+                <a class="header-bottom__menu-link" href="#">
+                    Каталог ножей
+                </a>
+            </li>
+            <li class="header-bottom__menu-item" id="menu-blades">
+                <a class="header-bottom__menu-link" href="#">
+                    Клинковое оружие
+                </a>
+            </li>
+            <li class="header-bottom__menu-item" id="menu-souvenires">
+                <a class="header-bottom__menu-link" href="#">
+                    Сувенирные изделия
+                </a>
+            </li>
+            <li class="header-bottom__menu-item" id="menu-flashlights">
+                <a class="header-bottom__menu-link" href="#">
+                    Фонари ARMYTEK
+                </a>
+            </li>
+            <li class="header-bottom__menu-item" id="menu-other">
+                <a class="header-bottom__menu-link" href="#">
+                    Сопуствующие товары
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav> <!-- /.header__bottom -->
+
+{{> menu-nav }}

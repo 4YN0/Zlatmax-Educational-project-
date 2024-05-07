@@ -3,13 +3,15 @@ body {
     height: 100%;
 }
 
+
+
 body {
     min-width: 320px;
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    @extend %mont-500;
+    font-size: 18px;
     line-height: 27px;
+    color: $black;
 
     overflow-x: hidden;
 }
@@ -34,11 +36,11 @@ body {
     padding: 0;
 }
 
-// .container {
-//     max-width: 1140px;
-//     margin: 0 auto;
-//     padding: 0 15px;
-// }
+.container {
+    max-width: 1586px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 // .container-fluid {
 //     max-width: 1920px;
