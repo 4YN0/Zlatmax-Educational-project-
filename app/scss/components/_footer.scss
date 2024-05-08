@@ -1,0 +1,258 @@
+.footer {
+    padding: 100px 0 60px;
+    background-color: $black;
+
+
+    /* navs
+    =======================*/
+
+    &__nav-inner {
+        display: flex;
+        justify-content: space-between;
+
+        .footer__nav-section:nth-child(1) {
+            width: 233px;
+        }
+
+        .footer__nav-section:nth-child(2) {
+            width: 269px;
+        }
+
+        .footer__nav-section:nth-child(3) {
+            width: 218px;
+        }
+
+        .footer__nav-section:nth-child(4) {
+            width: 379px;
+        }
+    }
+
+    &__nav-inner--info {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    &__nav-section--contacts {
+        width: 194px;
+    }
+
+    &__nav-section+.footer__nav-section {
+        margin-left: 170px;
+    }
+
+    &__nav-item--links {
+        width: 269px;
+    }
+
+    &__nav-item--varranty {
+        width: 317px;
+    }
+
+    &__nav-title {
+        margin-bottom: 30px;
+
+        @extend %mont-600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    &__nav-link,
+    &__nav-text {
+        display: block;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    &__nav-link {
+        cursor: pointer;
+
+        transition: all .3s;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__nav-link--accent {
+        color: $accent;
+    }
+
+
+
+    /* contacts
+    =======================*/
+
+    &__nav-link--icon {
+        padding-left: 30px;
+
+        position: relative;
+
+        &:before {
+            content: '';
+            @extend %bg;
+
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__nav-phone {
+        &:before {
+            width: 15px;
+            height: 16px;
+            background-image: url('../images/icons/footer-phone-icon.svg');
+
+            top: 5px;
+        }
+    }
+
+    &__nav-hours {
+
+        &:before {
+            width: 16px;
+            height: 16px;
+            background-image: url('../images/icons/footer-hours-icon.svg');
+
+            top: 6px;
+        }
+    }
+
+    &__nav-location {
+        &:before {
+            width: 11px;
+            height: 17px;
+            background-image: url('../images/icons/footer-location-icon.svg');
+
+            top: 6px;
+        }
+    }
+
+    &__nav-email {
+        &:before {
+            width: 18px;
+            height: 13px;
+            background-image: url('../images/icons/footer-email-icon.svg');
+
+            top: 8px;
+        }
+    }
+
+
+
+    /* form section
+    =======================*/
+
+    &__nav-form {
+        margin-top: 30px;
+        width: 375px;
+    }
+
+    &__nav-newsletter {
+        position: relative;
+    }
+
+    &__nav-input {
+        margin-bottom: 24px;
+        padding: 20px 70px 20px 20px;
+        height: 50px;
+        width: 100%;
+
+        color: #fff;
+        background-color: $deep-gray;
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+        &::placeholder {
+            @extend %mont-500;
+            font-size: 16px;
+            line-height: 20px;
+
+            color: $dark-gray;
+        }
+
+        &:focus {
+            border: 2px solid $accent;
+            outline: none;
+        }
+    }
+
+    &__nav-label {
+        display: flex;
+        align-items: flex-start;
+
+        .footer__nav-text {
+            margin-left: 35px;
+        }
+    }
+
+    &__nav-btn {
+        padding: 17px 21px;
+        width: 50px;
+        height: 50px;
+
+        @extend %bg;
+        background-size: 9px 15px;
+        background-image: url('../images/icons/arrow-right-w.svg');
+        background-color: $accent;
+        border: 0;
+        border-radius: 0 4px 4px 0;
+
+        position: absolute;
+        right: 0;
+
+        transition: all .3s;
+
+        &:hover {
+            background-color: $dark-gray;
+        }
+    }
+
+
+
+    /* social section
+    =======================*/
+
+    &__social {
+        margin: 20px 0 30px;
+        width: 100%;
+    }
+
+    &__social-list {
+        display: flex;
+        padding-bottom: 40px;
+
+        border-bottom: 1px solid #fff;
+    }
+
+    &__social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__social-item+.footer__social-item {
+        margin-left: 20px;
+    }
+
+
+
+    /* copyright section
+    =======================*/
+
+    &__copyright-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright-text {
+        @extend %mont-500;
+        color: #fff;
+        font-size: 14px;
+        line-height: 27px;
+
+        &:first-child {
+            max-width: 817px;
+        }
+    }
+}
