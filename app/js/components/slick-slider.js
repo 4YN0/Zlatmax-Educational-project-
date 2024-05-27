@@ -1,34 +1,18 @@
-$('.intro-block__slider-inner').slick({
-    arrows: false,
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    fade: true,
+$(function () {
+    $('.intro-block__slider-inner').on('init', function (event, slick) {
+        $(this).append('<div class="slick-counter"><span class="current"></span>/<span class="total"></span></div>');
+        $('.current').text(slick.currentSlide + 1);
+        $('.total').text(slick.slideCount);
+    })
+        .slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            fade: true,
+        })
+        .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            $('.current').text(nextSlide + 1);
+        });
 });
-
-var $slider = $('.intro-block__slider-inner');
-
-if ($slider.length) {
-    var currentSlide;
-    var slidesCount;
-    var sliderCounter = document.createElement('div');
-    sliderCounter.classList.add('slider__counter');
-
-    var updateSliderCounter = function (slick, currentIndex) {
-        currentSlide = slick.slickCurrentSlide() + 1;
-        slidesCount = slick.slideCount;
-        $(sliderCounter).text(currentSlide + '/' + 4)
-    };
-
-    $slider.on('init', function (event, slick) {
-        $slider.append(sliderCounter);
-        updateSliderCounter(slick);
-    });
-
-    $slider.on('afterChange', function (event, slick, currentSlide) {
-        updateSliderCounter(slick, currentSlide);
-    });
-
-    $slider.slick();
-}

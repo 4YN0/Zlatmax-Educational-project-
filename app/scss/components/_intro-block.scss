@@ -261,16 +261,28 @@
     }
 }
 
-
-
-.slider__counter {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 1;
-    font-size: 1.5rem;
-    font-weight: 600;
+.slick-counter {
+    @extend %mont-500;
     color: #fff;
-    mix-blend-mode: difference;
-    pointer-events: none;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+
+    position: absolute;
+    bottom: 66px;
+    left: 190px;
+}
+
+span.current {
+    @extend %mont-600;
+    color: $accent;
+    font-size: 24px;
+    counter-reset: decimal-counter;
+
+    &:before {
+        content: counter(decimal-counter);
+    }
+}
+
+span.total {
+    font-size: 18px;
 }
