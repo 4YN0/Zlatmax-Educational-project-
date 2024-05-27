@@ -229,7 +229,7 @@
     }
 
     &__favorites:hover svg {
-        fill: $accent;
+        fill: $accent !important;
     }
 
     &__favorites-icon {
@@ -300,6 +300,7 @@
     &__menu {
         display: flex;
     }
+
 
     &__menu-link {
         display: block;
