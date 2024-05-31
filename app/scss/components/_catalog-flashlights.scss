@@ -1,0 +1,57 @@
+.catalog-flashlights {
+    padding-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-content {
+        max-width: 316px;
+    }
+
+    &__item {
+        display: block;
+        padding: 30px;
+        max-width: 770px;
+        width: 100%;
+
+        background-color: #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &__item--technical {
+        background-image: url('../images/catalog/catalog-flashlights-technical.png');
+    }
+
+    &__item--headware {
+        background-image: url('../images/catalog/catalog-flashlights-headware.png');
+    }
+
+    &__item-title {
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+
+        @extend %subtitle;
+
+        position: relative;
+
+        &:before {
+
+            @extend %subtitle-line;
+        }
+    }
+
+    &__item-text {
+        margin-bottom: 45px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 0 50px;
+        max-width: 316px;
+        width: 100%;
+
+        font-size: 18px;
+    }
+}

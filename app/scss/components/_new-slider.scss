@@ -1,0 +1,48 @@
+.new-slider {
+    padding: 120px 0 170px;
+    @extend %bg;
+    background-image: url('../images/catalog/new-slider-bg.jpg');
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 336px;
+        margin-right: auto;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        @extend %title;
+        color: #fff;
+    }
+
+    &__text {
+        margin-bottom: 65px;
+
+        @extend %mont-500;
+        color: $gray;
+    }
+
+    &__section-link {
+        color: $accent;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__box {
+        max-width: 1185px;
+    }
+
+    &__slide-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        max-width: 1185px;
+    }
+}

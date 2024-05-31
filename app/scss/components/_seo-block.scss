@@ -1,0 +1,19 @@
+.seo-block {
+    padding: 60px 0;
+    background-image: url('../images/seo-block-bg.jpg');
+
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+
+        @extend %title;
+        color: $accent;
+    }
+
+    &__text {
+        @extend %mont-500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #fff;
+    }
+}

@@ -5,14 +5,34 @@
 @import 'global';
 @import 'mixins';
 
+/* Vendor */
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/rateyo/src/jquery.rateyo';
+@import 'components/slick-dots';
+
+
 /* Pages */
 @import 'index';
 
+
 /* Components */
+@import 'components/btn';
 @import 'components/header';
 @import 'components/menu-nav';
 @import 'components/footer';
-@import 'components/btn';
+@import 'components/product-card';
+@import 'components/product-slider';
+@import 'components/new-slider';
+@import 'components/article-card';
+
+/* Sections */
+
+@import 'components/intro-block';
+@import 'components/catalog-section';
+@import 'components/catalog-flashlights';
+@import 'components/articles';
+@import 'components/seo-block';
+
 @import 'media';
 
 

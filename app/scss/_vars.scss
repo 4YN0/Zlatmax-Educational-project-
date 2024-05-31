@@ -16,7 +16,7 @@ $red: #E7401B;
     font-size: 30px;
     font-weight: 700;
     line-height: 46px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 %subtitle {
@@ -56,4 +56,15 @@ $red: #E7401B;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+%subtitle-line {
+    content: '';
+        width: 68px;
+        height: 2px;
+        background-color: $accent;
+    
+        position: absolute;
+        left: 0;
+        bottom: 0;
 }

@@ -1,0 +1,27 @@
+.product-slider {
+    padding-bottom: 150px;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        @extend %title;
+        color: $black;
+    }
+
+    &__slide-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+.product-slider--promo {
+    padding-top: 130px;
+}

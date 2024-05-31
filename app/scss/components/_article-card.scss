@@ -1,0 +1,32 @@
+.article-card {
+    max-width: 375px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    &__info {
+        padding: 20px 20px 30px;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 10px;
+
+        @extend %subtitle;
+        font-size: 20px;
+        line-height: 34px;
+        color: $black;
+
+        transition: all .2s;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__date {
+        @extend %mont-500;
+        color: $gray;
+        font-size: 16px;
+        line-height: 34px;
+    }
+}

@@ -1,0 +1,74 @@
+.catalog-section {
+    &__inner {
+        padding: 100px 0 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 26px;
+    }
+
+    &__item {
+        display: block;
+        padding: 30px;
+        max-width: 511px;
+
+        background-color: #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &__item--knives {
+        background-image: url('../images/catalog/catalog-knives.png');
+    }
+
+    &__item--shortblade {
+        background-image: url('../images/catalog/catalog-shortblades.png');
+    }
+
+    &__item--longblade {
+        background-image: url('../images/catalog/catalog-longblades.png');
+    }
+
+    &__item--souvenire {
+        background-image: url('../images/catalog/catalog-souvenire.png');
+    }
+
+    &__item--other {
+        background-image: url('../images/catalog/catalog-other.png');
+    }
+
+    &__item--workshop {
+        background-image: url('../images/catalog/catalog-workshop.png');
+    }
+
+    &__item-title {
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+
+        @extend %subtitle;
+        color: $black;
+        position: relative;
+
+        &:before {
+            @extend %subtitle-line;
+        }
+    }
+
+    &__list {
+        padding-left: 15px;
+        list-style: disc;
+    }
+
+    &__bullet {
+        margin-top: 14px;
+
+        @extend %mont-500;
+        font-size: 18px;
+        line-height: 34px;
+        color: $black;
+
+        &::marker {
+            color: $accent;
+        }
+    }
+
+
+}
