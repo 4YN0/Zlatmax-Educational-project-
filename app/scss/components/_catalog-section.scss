@@ -48,14 +48,7 @@
         position: relative;
 
         &:before {
-            content: '';
-            width: 68px;
-            height: 2px;
-            background-color: $accent;
-
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            @extend %subtitle-line;
         }
     }
 

@@ -57,3 +57,14 @@ $red: #E7401B;
     background-size: cover;
     background-position: center center;
 }
+
+%subtitle-line {
+    content: '';
+        width: 68px;
+        height: 2px;
+        background-color: $accent;
+    
+        position: absolute;
+        left: 0;
+        bottom: 0;
+}
