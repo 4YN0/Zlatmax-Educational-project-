@@ -7,6 +7,10 @@
 
 /* Vendor */
 @import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/rateyo/src/jquery.rateyo';
+@import 'components/slick-dots';
+
+
 
 /* Pages */
 @import 'index';
@@ -17,7 +21,9 @@
 @import 'components/menu-nav';
 @import 'components/footer';
 @import 'components/intro-block';
+@import 'components/product-card';
 @import 'components/catalog-cards';
+@import 'components/product-slider';
 @import 'media';
 
 

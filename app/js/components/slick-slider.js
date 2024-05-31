@@ -1,3 +1,4 @@
+// intro block
 $(function () {
     $('.intro-block__slider-inner').on('init', function (event, slick) {
         $(this).append('<div class="slick-counter"><span class="current"></span>/<span class="total"></span></div>');
@@ -15,4 +16,18 @@ $(function () {
         .on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             $('.current').text(nextSlide + 1);
         });
+});
+
+// catalog slider block
+$(function () {
+
+    $('.product-slider__inner').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
 });

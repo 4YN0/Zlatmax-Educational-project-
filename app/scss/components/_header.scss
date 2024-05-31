@@ -64,6 +64,10 @@
 
         transition: all .2s;
     }
+
+    // &__auth svg.header-top__auth-icon {
+    //     fill: red;
+    // }
 }
 
 /* header__main
@@ -223,21 +227,18 @@
         color: $accent;
     }
 
-
-    &__favorites {
-        margin-left: 20px;
-    }
-
     &__favorites:hover svg {
-        fill: $accent !important;
+        fill: $accent;
     }
 
     &__favorites-icon {
+        margin-left: 20px;
         width: 28px;
         height: 27px;
 
         transition: all .2s;
     }
+
 
     &__cart {
         display: flex;
