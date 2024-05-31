@@ -11,20 +11,26 @@
 @import 'components/slick-dots';
 
 
-
 /* Pages */
 @import 'index';
+
 
 /* Components */
 @import 'components/btn';
 @import 'components/header';
 @import 'components/menu-nav';
 @import 'components/footer';
-@import 'components/intro-block';
 @import 'components/product-card';
-@import 'components/catalog-cards';
 @import 'components/product-slider';
 @import 'components/new-slider';
+@import 'components/article-card';
+
+/* Sections */
+
+@import 'components/intro-block';
+@import 'components/catalog-section';
+@import 'components/articles';
+
 @import 'media';
 
 
