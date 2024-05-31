@@ -31,3 +31,17 @@ $(function () {
     });
 
 });
+
+// new slider block
+$(function () {
+
+    $('.new-slider__inner').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
+});

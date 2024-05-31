@@ -5,8 +5,29 @@ title: Home
 
 {{> intro-block }}
 {{> catalog-cards }}
-{{> product-slider }}
 
+<section class="product-slider">
+    <div class="container-slider">
+        <div class="product-slider__heading">
+            <h2 class="product-slider__title">Хиты продаж</h2>
+            <a class="section-link product-slider__section-link" href="#">Перейти в каталог</a>
+        </div>
 
+        {{> product-slider }}
 
+    </div>
+</section>
 
+{{> new-slider }}
+
+<section class="product-slider--promo">
+    <div class="container-slider">
+        <div class="product-slider__heading">
+            <h2 class="product-slider__title">Акции</h2>
+            <a class="section-link product-slider__section-link" href="#">Перейти в каталог</a>
+        </div>
+
+        {{> product-slider }}
+
+    </div>
+</section>

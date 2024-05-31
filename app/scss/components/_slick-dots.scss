@@ -44,9 +44,10 @@
 }
 
 
-// product slider
+// Slider
 
-.product-slider__inner .slick-dots {
+.product-slider__inner .slick-dots,
+.new-slider__inner .slick-dots {
     display: flex;
     justify-content: center;
     margin-top: 40px;
