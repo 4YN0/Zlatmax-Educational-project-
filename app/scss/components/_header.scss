@@ -147,6 +147,8 @@
     &__callback {
         margin-left: 55px;
 
+        // form styler plugin
+        
         .jq-selectbox__select-text {
             @extend %mont-600;
             font-size: 18px;

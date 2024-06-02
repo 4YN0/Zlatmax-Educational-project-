@@ -1,0 +1,106 @@
+.shop-heading {
+    padding: 30px 0;
+
+    &__title {
+        margin-bottom: 25px;
+
+        @extend %title;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.shop-sort {
+    max-width: 376px;
+    width: 100%;
+
+    &__option {
+        font-size: 16px;
+    }
+
+    // form styler plugin
+    .jq-selectbox {
+        padding: 10px 10px 0 20px;
+        width: 100%;
+        border: 1px solid $gray;
+        border-radius: 3px;
+    }
+
+    .jq-selectbox__select-text {
+        @extend %mont-500;
+        font-size: 16px;
+        line-height: 22px;
+        color: $gray;
+        width: 100%;
+    }
+
+    .jq-selectbox__select,
+    .jq-selectbox__select .focused {
+        padding: 0 40px 0 0;
+        height: 32px;
+        color: $black;
+    }
+
+    .jq-selectbox__dropdown {
+        width: 100%;
+        margin: 2px 0 0;
+        border-radius: 4px;
+        background: $black;
+        color: #fff;
+        top: 40px;
+        left: 0;
+    }
+
+    .jq-selectbox__dropdown ul {
+        padding: 0;
+    }
+
+    .jq-selectbox li {
+        min-height: 18px;
+        padding: 5px 10px 6px;
+        color: #fff;
+    }
+
+    .jq-selectbox li:hover {
+        background-color: $accent;
+        color: #fff;
+    }
+
+    .jq-selectbox li,
+    .jq-selectbox li.selected {
+        @extend %mont-500;
+    }
+
+    .jq-selectbox li.selected {
+        background-color: $accent;
+    }
+
+    .jq-selectbox__trigger {
+        width: 12px;
+        height: 8px;
+
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        width: inherit;
+        height: inherit;
+
+        @extend %bg;
+        background-image: url('../images/icons/arrow-down-gray.svg');
+
+        transition: all .3s;
+    }
+
+    .jq-selectbox__trigger-arrow--active {
+        rotate: -180deg;
+    }
+}

@@ -1,0 +1,27 @@
+---
+layout: default
+title: Shop category
+---
+
+<div class="shop-heading">
+    <div class="container">
+        <h3 class="shop-heading__title">Разделочные ножи</h3>
+        <div class="shop-heading__controls">
+            
+            {{> breadcrumbs }}
+
+            <form class="shop-sort" id="shop-sort">
+                <select class="shop-sort__select">
+                    <option class="shop-sort__option">По популярности</option>
+                    <option class="shop-sort__option">По рейтингу</option>
+                    <option class="shop-sort__option">По возрастанию цены</option>
+                    <option class="shop-sort__option">По убыванию цены</option>
+                    <option class="shop-sort__option">По модели (А-Я)</option>
+                    <option class="shop-sort__option">По модели (Я-А)</option>
+                    <option class="shop-sort__option">По имени (А-Я)</option>
+                    <option class="shop-sort__option">По имени (Я-А)</option>
+                </select>
+            </form>
+        </div> <!-- /.shop-heading__controls -->
+    </div> <!-- /.container -->
+</div> <!-- /.shop-heading -->
