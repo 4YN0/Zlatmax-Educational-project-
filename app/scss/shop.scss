@@ -30,6 +30,8 @@
         width: 100%;
         border: 1px solid $gray;
         border-radius: 3px;
+
+        z-index: 9;
     }
 
     .jq-selectbox__select-text {
@@ -103,4 +105,15 @@
     .jq-selectbox__trigger-arrow--active {
         rotate: -180deg;
     }
+}
+
+.shop__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
 }

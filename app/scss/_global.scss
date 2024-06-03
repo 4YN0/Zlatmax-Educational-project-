@@ -83,6 +83,17 @@ a {
     border: 1px solid $accent;
 }
 
+.checkbox-style--light {
+    margin-top: 6px;
+
+    background-color: transparent;
+    border: 1px solid $gray;
+}
+
+.checkbox:checked+.checkbox-style--light {
+    border: 1px solid $accent;
+}
+
 .checkbox:checked+.checkbox-style:before {
     content: '';
     width: 8px;

@@ -45,12 +45,17 @@
         padding-bottom: 15px;
 
         border-bottom: 1px solid $gray;
-    }
 
-    /* RateYo */
+        /* RateYo */
 
-    .jq-ry-container {
-        padding: 0;
+        .jq-ry-container {
+            padding: 0;
+        }
+
+        .jq-ry-container,
+        .jq-ry-rated-group {
+            z-index: 8;
+        }
     }
 
     &__reviews-link {
