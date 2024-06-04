@@ -184,26 +184,13 @@
 
     &__rating-group {
         display: flex;
-    }
 
-    &__rating-item {
-        display: inline-block;
-        padding-left: 30px;
-
-        position: relative;
-
-        &:after {
-            content: '';
-            width: 22px;
-            height: 22px;
-            @extend %bg;
-            background-image: url('../images/icons/star-rating.svg');
-
-            position: absolute;
-            left: 0;
+        // rateyo plugin
+        .jq-ry-group-wrapper {
             top: 1px;
         }
     }
+
 
     &__label-sum,
     &__rating-text {
