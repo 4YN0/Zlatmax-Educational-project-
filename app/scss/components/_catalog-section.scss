@@ -54,16 +54,17 @@
 
     &__list {
         padding-left: 15px;
-        list-style: disc;
     }
 
-    &__bullet {
+    li.catalog-section__bullet {
         margin-top: 14px;
 
         @extend %mont-500;
         font-size: 18px;
         line-height: 34px;
         color: $black;
+
+        list-style: disc;
 
         &::marker {
             color: $accent;

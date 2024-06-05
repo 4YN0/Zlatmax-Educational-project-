@@ -15,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 30px;
+        cursor: pointer;
 
         background-color: $black;
 
@@ -31,7 +32,7 @@
         @extend %bg;
         background-image: url('../images/icons/arrow-down.svg');
 
-        transition: all .2s;
+        transition: all .2s linear;
         rotate: -180deg;
     }
 
@@ -128,6 +129,7 @@
     .its-handle.state_hover {
         background-color: $black;
         border: 4px solid $accent;
+        cursor: pointer;
 
         &:hover {
             background-color: $black;
@@ -163,6 +165,7 @@
 .filter-chars {
     &__label {
         display: block;
+        cursor: pointer;
     }
 
     &__label+.filter-chars__label {
@@ -188,6 +191,11 @@
         // rateyo plugin
         .jq-ry-group-wrapper {
             top: 1px;
+            cursor: pointer;
+        }
+
+        .jq-ry-container {
+            z-index: 1;
         }
     }
 

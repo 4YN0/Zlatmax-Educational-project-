@@ -31,29 +31,42 @@ title: Shop category
         <div class="shop__inner">
             {{> shop-filter }}
 
-            <div class="shop-cards">
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-                {{> product-card}}
-            </div>
-        </div>
-    </div>
-</div>
+            <div class="shop__results">
+                <div class="shop__items">
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                    {{> product-card}}
+                </div> <!-- /.shop-cards -->
+
+                <div class="shop__results-controls">
+                    <button class="btn btn--stroked shop__results-btn" id="show-more">Показать больше</button>
+
+                    {{> pagination }}
+
+                </div>
+            </div> <!-- /.shop__results -->
+
+        </div> <!-- /.shop__inner -->
+    </div> <!-- /.container -->
+
+    {{> seo-block }}
+    
+</div> <!-- /.shop -->

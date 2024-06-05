@@ -19,3 +19,16 @@
         background-color: $dark-gray;
     }
 }
+
+.btn--stroked {
+    color: $accent;
+
+    background-color: transparent;
+    border: 1px solid $accent;
+    box-shadow: none;
+
+    &:hover {
+        color: #fff;
+        border: 1px solid $dark-gray;
+    }
+}
