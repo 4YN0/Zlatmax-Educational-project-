@@ -1,13 +1,13 @@
 $(function(){
-    $('.product-card__comparison').on('click', function(event){
+    $('.btn-addto__comparison').on('click', function(event){
         event.preventDefault();
 
-        $(this).toggleClass('product-card__comparison--active')
+        $(this).toggleClass('btn-addto__comparison--active')
     })
 
-    $('.product-card__favorites').on('click', function (event) {
+    $('.btn-addto__favorites').on('click', function (event) {
         event.preventDefault();
 
-        $(this).toggleClass('product-card__favorites--active')
+        $(this).toggleClass('btn-addto__favorites--active')
     })
 });

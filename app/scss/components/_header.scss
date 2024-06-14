@@ -146,77 +146,7 @@
 
     &__callback {
         margin-left: 55px;
-
-        // form styler plugin
-        
-        .jq-selectbox__select-text {
-            @extend %mont-600;
-            font-size: 18px;
-            color: $black;
-        }
-
-        .jq-selectbox__select,
-        .jq-selectbox__select .focused {
-            height: 32px;
-            padding: 0 45px 0 0;
-            color: $black;
-        }
-
-        .jq-selectbox__dropdown {
-            width: 100%;
-            margin: 2px 0 0;
-            border-radius: 4px;
-            background: $black;
-            color: #fff;
-            top: 25px;
-        }
-
-        .jq-selectbox__dropdown ul {
-            padding: 0;
-        }
-
-        .jq-selectbox li {
-            min-height: 18px;
-            padding: 5px 10px 6px;
-            color: #fff;
-        }
-
-        .jq-selectbox li:hover {
-            background-color: $accent;
-            color: #fff;
-        }
-
-        .jq-selectbox li,
-        .jq-selectbox li.selected {
-            @extend %mont-500;
-        }
-
-        .jq-selectbox li.selected {
-            background-color: $accent;
-        }
-
-        .jq-selectbox__trigger {
-            width: 16px;
-            height: 10px;
-
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
-        .jq-selectbox__trigger-arrow {
-            width: 16px;
-            height: 10px;
-
-            @extend %bg;
-            background-image: url('../images/icons/arrow-down.svg');
-
-            transition: all .3s;
-        }
-
-        .jq-selectbox__trigger-arrow--active {
-            rotate: -180deg;
-        }
+        // dropdown style in form-styler scss file
     }
 
     &__callback-link {

@@ -45,3 +45,32 @@ $(function () {
     });
 
 });
+
+// product page gallery
+$(function () {
+    $('.product-page__thumbs').slick({
+        asNavFor: '.product-page__big',
+        focusOnSelect: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: false,
+        arrows: false,
+    });
+
+    $('.product-page__big').slick({
+        asNavFor: '.product-page__thumbs',
+        draggable: false,
+        arrows: false,
+        fade: true,
+        vertical: false,
+
+        responsive: [
+            {
+                breakpoint: 1051,
+                settings: {
+                    draggable: true,
+                }
+            }
+        ]
+    });
+});

@@ -10,12 +10,14 @@
 @import '../../node_modules/rateyo/src/jquery.rateyo';
 @import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
 @import 'components/slick-dots';
+@import 'components/form-styler';
 
 
 /* Components */
 @import 'components/btn';
 @import 'components/breadcrumbs';
 @import 'components/pagination';
+@import 'components/tooltip';
 
 @import 'components/header';
 @import 'components/menu-nav';
@@ -26,7 +28,6 @@
 @import 'components/new-slider';
 @import 'components/article-card';
 
-@import 'components/shop-dropdown';
 @import 'components/shop-filter';
 
 /* Sections */
@@ -39,6 +40,7 @@
 
 /* Pages */
 @import 'shop';
+@import 'product-page';
 
 @import 'media';
 
