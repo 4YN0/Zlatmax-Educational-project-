@@ -79,8 +79,9 @@
 
 .product__btn--page {
     width: 228px;
-    padding: 15px 20px;
+    padding: 0 20px;
     font-size: 18px;
+    height: 50px;
 }
 
 .product__btn-icon {
@@ -91,4 +92,49 @@
     fill: #fff;
     stroke: #fff;
     stroke-width: 1px;
+}
+
+.btn--link {
+    padding: 0;
+
+    @extend %mont-600;
+    color: $accent;
+    font-size: 18px;
+    line-height: 0;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    transition: all .3s;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+.tab {
+    padding: 0 0 30px 0;
+    text-align: center;
+
+    @extend %mont-600;
+    color: $dark-gray;
+    font-size: 20px;
+    line-height: 0;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+    transition: all .3s;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+.tab--active {
+    color: $black;
+    border-bottom: 2px solid $accent;
 }

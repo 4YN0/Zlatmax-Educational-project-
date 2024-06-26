@@ -208,7 +208,7 @@
         padding: 8px 40px 10px 20px;
         font-size: 14px;
         color: $black;
-        
+
     }
 
     .jq-selectbox__dropdown li:hover {
@@ -304,4 +304,8 @@
 
         right: 0;
     }
+}
+
+.changed .jq-selectbox__select-text {
+    color: #000;
 }

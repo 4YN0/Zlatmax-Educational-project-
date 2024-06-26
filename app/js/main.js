@@ -19,3 +19,6 @@
 //= components/header.js
 //= components/product-card.js
 //= components/shop-filter.js
+//= components/product-page.js
+
+

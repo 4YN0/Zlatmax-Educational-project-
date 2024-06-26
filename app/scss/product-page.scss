@@ -6,6 +6,7 @@
     &__card {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 120px;
     }
 
     // gallery
@@ -145,7 +146,7 @@
         align-items: center;
     }
 
-    &__options-item + .product-page__options-item {
+    &__options-item+.product-page__options-item {
         margin-top: 20px;
     }
 
@@ -160,7 +161,7 @@
         color: $black;
     }
 
-    &__options-select{
+    &__options-select {
         max-width: 534px;
         width: 100%;
     }
@@ -193,7 +194,7 @@
         display: inline-block;
 
         @extend %mont-500;
-        font-size: 14px;    
+        font-size: 14px;
         line-height: 17px;
         color: $gray;
     }
@@ -210,9 +211,236 @@
     &__purchase-btns {
         display: flex;
 
-        .btn + .btn {
+        .btn+.btn {
             margin-left: 30px;
         }
     }
-}
 
+
+
+    // tabs
+
+    &__about {
+        padding: 30px;
+        margin-bottom: 120px;
+
+        background-color: #FEFEFE;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    &__about-tabs {
+        margin-bottom: 30px;
+        border-bottom: 1px solid $gray;
+    }
+
+    &__about-tab+.product-page__about-tab {
+        margin-left: 60px;
+    }
+
+    &__tab-content {
+        display: none;
+    }
+
+    &__tab-content--show {
+        display: block;
+    }
+
+
+    // text tab content (1st)
+
+    &__about-text {
+        margin-bottom: 20px;
+        max-width: 1432px;
+
+        @extend %mont-500;
+        font-size: 18px;
+        color: $black;
+        line-height: 27px;
+
+        span {
+            @extend %mont-600;
+        }
+    }
+
+    &__about-text:last-of-type {
+        margin-bottom: 0;
+    }
+
+
+    // chars tab content (2nd)
+
+    &__chars-content {
+        display: flex;
+    }
+
+    &__table-wrapper+.product-page__table-wrapper {
+        margin-left: 130px;
+        padding-left: 30px;
+
+        border-left: 1px solid $gray;
+    }
+
+    &__chars-table {
+        border-spacing: 0 10px;
+    }
+
+    &__table-heading {
+        margin-bottom: 10px;
+
+        @extend %mont-700;
+        font-size: 18px;
+        color: $black;
+    }
+
+    &__table-name {
+        display: inline-block;
+        margin-right: 60px;
+    }
+
+
+    // reviews tab content (3d)
+
+    &__reviews-wrapper {
+        display: block;
+    }
+
+    &__reviews-item {
+        padding-bottom: 30px;
+
+        margin-bottom: 30px;
+        border-bottom: 1px solid $gray;
+
+    }
+
+    &__reviews-box {
+        display: flex;
+    }
+
+    &__reviews-userpic {
+        margin-right: 30px;
+
+        max-width: 80px;
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+    }
+
+    &__reviews-content {
+        max-width: 850px;
+    }
+
+    &__reviews-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        margin-bottom: 10px;
+    }
+
+    &__reviews-title {
+        @extend %mont-600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $black;
+    }
+
+    #reviews-date {
+        @extend %mont-500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $gray;
+    }
+
+    .rating-stars--reviews {
+        padding: 0;
+        margin-bottom: 10px;
+
+        z-index: 9;
+    }
+
+    &__reviews-text {
+        margin-bottom: 30px;
+
+        @extend %mont-500;
+        font-size: 18px;
+        line-height: 27px;
+        color: $black;
+    }
+
+    &__reviews-text--empty {
+        display: none;
+
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+
+    &__reviews-text--empty-show {
+        display: block;
+    }
+
+    &__reviews-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__reviews-addcomment {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    // Delivery tab content (4d)
+
+    &__delivery-stepone {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ababab;
+    }
+
+    &__options-select--delivery {
+        max-width: 300px;
+    }
+
+    &__options-name--delivery {
+        max-width: 128px;
+        width: 100%;
+    }
+
+    &__delivery-steptwo {
+        display: none;
+    }
+
+    &__delivery-steptwo--show {
+        display: block;
+    }
+
+    &__delivery-item,
+    &__delivery-info,
+    &__delivery-type {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__delivery-item:not(:first-child) {
+        padding-top: 30px;
+        margin-top: 30px;
+        border-top: 1px solid $gray;
+    }
+
+    &__delivery-name {
+        margin-left: 30px;
+    }
+
+    &__delivery-price {
+        margin-left: 60px;
+        @extend %mont-700;
+    }
+
+    .jq-selectbox {
+        z-index: 9;
+    }
+
+}
