@@ -6,7 +6,7 @@ $(function () {
         $('#menu-knives .header-bottom__menu-link').toggleClass('header-bottom__menu-link--active');
 
         $('.header-bottom__menu-link--active').not($('#menu-knives .header-bottom__menu-link')).removeClass('header-bottom__menu-link--active');
-        
+
 
         $('.menu-nav--knives').toggleClass('menu-nav--show');
 
@@ -70,23 +70,8 @@ $(function () {
 });
 
 
-$(function () {
-
-    $('#menu-other a').on('click', function (event) {
-        event.preventDefault();
-
-        $('#menu-other .header-bottom__menu-link').toggleClass('header-bottom__menu-link--active');
-
-        $('.header-bottom__menu-link--active').not($('#menu-other .header-bottom__menu-link')).removeClass('header-bottom__menu-link--active');
-
-
-        $('.menu-nav--other').toggleClass('menu-nav--show');
-
-        $('.menu-nav').not($('.menu-nav--other')).removeClass('menu-nav--show');
-    });
-
-});
 
 
 
-    
+
+

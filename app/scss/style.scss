@@ -8,22 +8,27 @@
 /* Vendor */
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../node_modules/rateyo/src/jquery.rateyo';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
 @import 'components/slick-dots';
-
-
-/* Pages */
-@import 'index';
+@import 'components/form-styler';
 
 
 /* Components */
 @import 'components/btn';
+@import 'components/breadcrumbs';
+@import 'components/pagination';
+@import 'components/tooltip';
+
 @import 'components/header';
 @import 'components/menu-nav';
 @import 'components/footer';
+
 @import 'components/product-card';
 @import 'components/product-slider';
 @import 'components/new-slider';
 @import 'components/article-card';
+
+@import 'components/shop-filter';
 
 /* Sections */
 
@@ -32,6 +37,10 @@
 @import 'components/catalog-flashlights';
 @import 'components/articles';
 @import 'components/seo-block';
+
+/* Pages */
+@import 'shop';
+@import 'product-page';
 
 @import 'media';
 

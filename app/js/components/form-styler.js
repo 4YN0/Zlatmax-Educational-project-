@@ -2,14 +2,32 @@
 
 $(function () {
 
-    $('.user-nav__callback-select').styler();
+    $('.user-nav__callback-select').styler(); // header phone dropdown
 
-    $('.jq-selectbox__select').on('click', function () {
-        $('.jq-selectbox__trigger-arrow').toggleClass('jq-selectbox__trigger-arrow--active')
+    $('#phone-list .jq-selectbox__select').on('click', function () {
+        $('#phone-list .jq-selectbox__trigger-arrow').toggleClass('jq-selectbox__trigger-arrow--active')
     });
 
-    $('.jq-selectbox li').on('click', function () {
-        $('.jq-selectbox__trigger-arrow').removeClass('jq-selectbox__trigger-arrow--active')
+
+    $('.shop-sort__select').styler(); // shop sort dropdown
+
+    $('#shop-sort .jq-selectbox__select').on('click', function () {
+        $('.shop-sort .jq-selectbox__trigger-arrow').toggleClass('shop-sort jq-selectbox__trigger-arrow--active')
     });
 
+
+
+    $('.product-page__options-select').styler(); // product page dropdown
+
+    $('.product-page__options-select').each(function () {
+        $(this).on('click', function () {
+            $(this).find('.jq-selectbox__trigger-arrow').toggleClass('jq-selectbox__trigger-arrow--active');
+        });
+    });
+
+
+    $('.product-page__purchase-sum').styler(); // product page sum control
+    
 });
+
+
