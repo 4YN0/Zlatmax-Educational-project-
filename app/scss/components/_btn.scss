@@ -138,3 +138,16 @@
     color: $black;
     border-bottom: 2px solid $accent;
 }
+
+.user-nav__burger-btn {
+    display: block;
+    margin: 0;
+    max-width: 48px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+
+    z-index: 9999;
+}
