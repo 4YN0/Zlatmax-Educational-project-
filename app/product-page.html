@@ -46,8 +46,64 @@
                         <svg class="header-top__auth-icon">
                             <use xlink:href="images/sprite.svg#user-icon"></use>
                         </svg>
-                        Личный кабинет</a>
-                </div>
+                        Личный кабинет
+                    </a>
+                </div> <!-- /.header-top__inner -->
+        
+                <div class="header-top__inner header-top__inner--mobile">
+                    <a class="header-top__icon" href="#">
+                        <svg class="header-top__phone-icon--mobile">
+                            <use xlink:href="images/sprite.svg#footer-phone-icon"></use>
+                        </svg>
+                    </a>
+                    <a class="header-top__icon" href="#">
+                        <svg class="header-top__auth-icon--mobile">
+                            <use xlink:href="images/sprite.svg#user-icon"></use>
+                        </svg>
+                    </a>
+        
+                    <a class="header-top__icon header-top__icon--favorites" href="#">
+                        <svg class="header-top__favorites-icon--mobile">
+                            <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                        </svg>
+                    </a>
+        
+                    <a class="user-nav__cart" href="#">
+                        <div class="user-nav__cart-box">
+                            <svg class="user-nav__cart-icon">
+                                <use xlink:href="images/sprite.svg#cart-icon"></use>
+                                <span class="user-nav__cart-sum">0</span>
+                            </svg>
+                        </div>
+                        <div class="user-nav__price-box">
+                            <div class="user-nav__price">
+                                <span class="user-nav__price-sum">0</span>
+                                <span class="user-nav__price-currency">р.</span>
+                            </div>
+                        </div>
+                    </a>
+        
+                    <button class="user-nav__burger-btn">
+                        <svg id="burger-btn" class="user-nav__burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+                            fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                                <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+                                    fill="freeze" begin="start.begin" />
+                                <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+                                    fill="freeze" begin="reverse.begin" />
+                            </path>
+                            <rect width="10" height="10" stroke="none">
+                                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                            </rect>
+                            <rect width="10" height="10" stroke="none">
+                                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                            </rect>
+                        </svg>
+                    </button>
+                    
+                </div> <!-- /.header-top__inner--mobile -->
+        
             </div>
         </nav> <!-- /.header__top -->
         
@@ -107,30 +163,35 @@
             </div>
         </div> <!-- /.header__main -->
         
-        <nav class="header-bottom">
+        <nav class="header-bottom  header-bottom--catalog">
             <div class="container">
                 <ul class="header-bottom__menu">
-                    <li class="header-bottom__menu-item" id="menu-knives">
+                    <li class="header-bottom__menu-item  header-bottom__menu-item--back">
+                        <a id="back-catalog" class="header-bottom__menu-link" href="#">
+                            Назад
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-knives">
                         <a class="header-bottom__menu-link" href="#">
                             Каталог ножей
                         </a>
                     </li>
-                    <li class="header-bottom__menu-item" id="menu-blades">
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-blades">
                         <a class="header-bottom__menu-link" href="#">
                             Клинковое оружие
                         </a>
                     </li>
-                    <li class="header-bottom__menu-item" id="menu-souvenires">
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-souvenires">
                         <a class="header-bottom__menu-link" href="#">
                             Сувенирные изделия
                         </a>
                     </li>
-                    <li class="header-bottom__menu-item" id="menu-flashlights">
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-flashlights">
                         <a class="header-bottom__menu-link" href="#">
                             Фонари ARMYTEK
                         </a>
                     </li>
-                    <li class="header-bottom__menu-item" id="menu-other">
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-other">
                         <a class="header-bottom__menu-link" href="#">
                             Сопуствующие товары
                         </a>
@@ -174,6 +235,11 @@
         
                     <div class="menu-nav__items-box">
                         <ul class="menu-nav__list">
+                            <li class="header-bottom__menu-item  header-bottom__menu-item--back header-bottom__menu-item--back-category">
+                                <a class="header-bottom__menu-link" href="#">
+                                    Назад
+                                </a>
+                            </li>
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link" href="#">
                                     Разделочные ножи
@@ -492,6 +558,11 @@
         
                     <div class="menu-nav__items-box">
                         <ul class="menu-nav__list">
+                            <li class="header-bottom__menu-item  header-bottom__menu-item--back header-bottom__menu-item--back-category">
+                                <a class="header-bottom__menu-link" href="#">
+                                    Назад
+                                </a>
+                            </li>
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link" href="#">
                                     Разделочные ножи
@@ -810,6 +881,11 @@
         
                     <div class="menu-nav__items-box">
                         <ul class="menu-nav__list">
+                            <li class="header-bottom__menu-item  header-bottom__menu-item--back header-bottom__menu-item--back-category">
+                                <a class="header-bottom__menu-link" href="#">
+                                    Назад
+                                </a>
+                            </li>
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link" href="#">
                                     Разделочные ножи
@@ -1128,6 +1204,11 @@
         
                     <div class="menu-nav__items-box">
                         <ul class="menu-nav__list">
+                            <li class="header-bottom__menu-item  header-bottom__menu-item--back">
+                                <a class="header-bottom__menu-link" href="#">
+                                    Назад
+                                </a>
+                            </li>
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link" href="#">
                                     Разделочные ножи
@@ -1370,13 +1451,6 @@
         
         
                     <div class="menu-nav__items-box">
-                        <ul class="menu-nav__list">
-                            <li class="menu-nav__item">
-                                <a class="menu-nav__link  menu-nav__link--all" href="#">
-                                    Смотреть все
-                                </a>
-                            </li>
-                        </ul> <!-- /.menu-nav__list -->
                         <ul class="menu-nav__list">
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link  menu-nav__link--all" href="#">
@@ -1446,6 +1520,11 @@
         
                     <div class="menu-nav__items-box">
                         <ul class="menu-nav__list">
+                            <li class="header-bottom__menu-item  header-bottom__menu-item--back header-bottom__menu-item--back-category">
+                                <a class="header-bottom__menu-link" href="#">
+                                    Назад
+                                </a>
+                            </li>
                             <li class="menu-nav__item">
                                 <a class="menu-nav__link" href="#">
                                     Разделочные ножи
@@ -1716,17 +1795,47 @@
                                 </a>
                             </li>
                         </ul> <!-- /.menu-nav__list -->
-                        <ul class="menu-nav__list">
-                            <li class="menu-nav__item">
-                                <a class="menu-nav__link  menu-nav__link--all" href="#">
-                                    Смотреть все
-                                </a>
-                            </li>
-                        </ul> <!-- /.menu-nav__list -->
                     </div> <!-- /.menu-nav__items-box -->
                 </div> <!-- /.menu-nav__wrapper -->
             </div> <!-- /.container -->
-        </nav> <!-- /.menu-nav--other -->    </header>
+        </nav> <!-- /.menu-nav--other -->
+        <div class="header-bottom__hidden-menu">
+            <div class="container">
+                <ul class="header-bottom__menu--mobile">
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            Личный кабинет
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item  header-bottom__menu-second" id="menu-catalog-mobile">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            Каталог товаров
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            Оплата и доставка
+                        </a>
+                    </li>
+                    <li class="header-bottom__menu-item">
+                        <a class="header-bottom__menu-link  header-bottom__menu-link--mobile" href="#">
+                            О нас
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+        </div> <!-- /.header__bottom--mobile -->    </header>
 
     <main class="main">
         

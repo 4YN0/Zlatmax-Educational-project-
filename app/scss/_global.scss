@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+.body-lock {
+    overflow: hidden;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -46,12 +50,6 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-// .container-fluid {
-//     max-width: 1920px;
-//     margin: 0 auto;
-//     padding: 0 20px;
-// }
 
 a {
     cursor: pointer;

@@ -20,5 +20,6 @@
 //= components/product-card.js
 //= components/shop-filter.js
 //= components/product-page.js
+//= components/mobile-menu.js
 
 

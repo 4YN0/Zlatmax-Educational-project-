@@ -17,6 +17,10 @@
         padding: 22px 0;
     }
 
+    &__inner--mobile {
+        display: none;
+    }
+
     &__list {
         display: flex;
     }
@@ -37,7 +41,8 @@
         color: $accent;
     }
 
-    &__auth {
+    &__auth,
+    &__icon {
         display: flex;
         align-items: center;
         color: #fff;
@@ -56,7 +61,8 @@
     }
 
 
-    &__auth-icon {
+    &__auth-icon,
+    &__icon {
         margin-right: 15px;
         width: 21px;
         height: 28px;
@@ -86,6 +92,10 @@
     .logo {
         width: 190px;
         height: 42px;
+    }
+
+    .logo--hide {
+        display: none;
     }
 
     .logo-img {
@@ -222,18 +232,17 @@
     }
 }
 
-
-
 /* header__bottom
 =======================*/
 
 .header-bottom {
     background-color: $black;
 
+
     &__menu {
         display: flex;
+        justify-content: space-between;
     }
-
 
     &__menu-link {
         display: block;
@@ -257,4 +266,201 @@
     &__menu-item+.header-bottom__menu-item {
         margin-left: 116px;
     }
+
+    &__hidden-menu {
+        display: none;
+        background-color: $black;
+
+        position: absolute;
+        top: 176px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9998;
+    }
+
+    &__hidden-menu--show {
+        display: block;
+    }
+
+    // mobile menu
+
+    &__menu--mobile {
+        display: block;
+    }
+
+    // &__menu--mobile--show {
+    //     display: block;
+    // }
+
+    &__menu-item+.header-bottom__menu-item {
+        margin-left: 0;
+    }
+
+    &__menu-item--back {
+        display: none;
+    }
+
+    &__menu-item--back a {
+        padding-left: 30px;
+        position: relative;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: #fff;
+            border-bottom: 1px solid transparent;
+        }
+
+        &:after {
+            content: '';
+            width: 15px;
+            height: 15px;
+
+            @extend %bg;
+            background-image: url('../images/icons/back-arrow.svg');
+
+            position: absolute;
+            left: 0;
+            top: 28px;
+        }
+    }
+
+    &__menu-second {
+        position: relative;
+
+        &:after {
+            display: none;
+            content: '';
+            width: 20px;
+            height: 20px;
+
+            @extend %bg;
+            background-image: url('../images/icons/arrow-right-thin.svg');
+
+            position: absolute;
+            right: 0;
+            top: 26px;
+        }
+    }
 }
+
+
+
+// Media =========================
+
+@media (max-width: 1080px) {
+    .header {
+        box-shadow: -1px 1px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-main__inner {
+        flex-wrap: wrap;
+    }
+
+    .search-form {
+        display: none;
+        margin-right: 0;
+    }
+
+    .search-form--show {
+        display: block;
+    }
+
+    .user-nav {
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .header-top__inner {
+        display: none;
+    }
+
+    .header-top__inner--mobile {
+        display: flex;
+    }
+
+    .header-top__auth-icon,
+    .header-top__icon {
+        margin-right: 0;
+    }
+
+    .user-nav__cart {
+        margin-left: 0;
+    }
+
+    .user-nav__cart-icon {
+        width: 27px;
+        height: 27px;
+
+        fill: #fff;
+    }
+
+    .user-nav__cart-box span {
+        bottom: 22px;
+        right: -3px;
+    }
+
+    .user-nav__price-box {
+        display: none;
+    }
+
+    .header-top__icon--favorites {
+        width: 28px;
+    }
+
+    .header-main__inner {
+        justify-content: center;
+    }
+
+    .user-nav {
+        display: none;
+    }
+
+    .search-form {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header-bottom,
+    .header-bottom--mobile {
+        display: none;
+    }
+
+    .header-bottom--show {
+        display: block;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 30000;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header-bottom__menu,
+    .menu-nav--show {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .header-bottom__menu~.wrapper {
+        overflow-y: hidden;
+    }
+
+    .header-bottom__menu-second {
+        
+        &:after {
+            display: block;
+        }
+    }
+
+    .header-bottom__menu-link {
+        border-bottom: 1px solid #3d3d3d;
+    }
+
+    .header-bottom__menu-item--back {
+        display: block;
+    }
+}
+
+@media (max-width: 860px) {}
