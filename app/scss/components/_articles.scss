@@ -1,6 +1,6 @@
 .articles {
     padding-bottom: 120px;
-    
+
     &__title {
         @extend %title;
 
@@ -10,5 +10,32 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* Media
+===============*/
+
+@media (max-width: 1620px) {
+    .articles__items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .article-card {
+        max-width: 100%;
+    }
+
+    .article-card__info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .articles__items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
     }
 }

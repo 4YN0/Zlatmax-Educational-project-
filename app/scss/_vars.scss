@@ -24,6 +24,10 @@ $red: #E7401B;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px;
+
+    @media (max-width: 475px) {
+        font-size: 20px;
+    }
 }
 
 %mont-500 {

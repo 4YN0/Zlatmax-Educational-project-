@@ -2,8 +2,9 @@
     padding-bottom: 120px;
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 
     &__item-content {
@@ -15,6 +16,8 @@
         padding: 30px;
         max-width: 770px;
         width: 100%;
+
+        background-repeat: no-repeat;
 
         background-color: #fff;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -48,10 +51,103 @@
 
     &__btn {
         display: inline-block;
-        padding: 0 50px;
         max-width: 316px;
         width: 100%;
 
         font-size: 18px;
+    }
+}
+
+
+/* Media
+===============*/
+
+@media (max-width: 1430px) {
+    .catalog-flashlights__item {
+        background-position: -40px 0;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1290px) {
+    .catalog-flashlights__item {
+        background-position: -60px 0;
+    }
+}
+
+@media (max-width: 1210px) {
+    .catalog-flashlights__item {
+        background-position: -80px 0;
+    }
+}
+
+@media (max-width: 1140px) {
+    .catalog-flashlights__item {
+        padding: 0;
+        max-width: 100%;
+        background-image: none;
+    }
+
+    .catalog-flashlights__item--technical:after {
+        content: "";
+        width: 470px;
+        height: 200px;
+
+        background-image: url(../images/catalog/catalog-flashlights-technical.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        position: absolute;
+        rotate: -40deg;
+        top: 56%;
+        right: -36px;
+        transform: translateY(1px);
+    }
+
+    .catalog-flashlights__item--headware:after {
+        content: '';
+        width: 500px;
+        height: 150px;
+
+        background-image: url(../images/catalog/catalog-flashlights-headware.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        position: absolute;
+        right: 50%;
+        bottom: 50px;
+        transform: translateX(110px);
+    }
+
+    .catalog-flashlights__item-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .catalog-flashlights__item-title {
+        padding: 30px 20px 15px 20px;
+    }
+
+    .catalog-flashlights__item-title:before {
+        left: 50%;
+        transform: translateX(-34px);
+    }
+
+    .catalog-flashlights__item-text {
+        margin-bottom: 180px;
+        padding: 0 20px;
+    }
+
+    .catalog-flashlights__btn {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .catalog-flashlights__inner {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

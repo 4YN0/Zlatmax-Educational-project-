@@ -17,3 +17,13 @@
         color: #fff;
     }
 }
+
+@media (max-width: 640px) {
+    .seo-block__text {
+        font-size: 16px;
+    }
+
+    .seo-block__title {
+        text-align: left;
+    }
+}

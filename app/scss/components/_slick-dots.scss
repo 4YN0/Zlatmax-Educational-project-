@@ -92,3 +92,40 @@
         }
     }
 }
+
+
+/* Media
+================ */
+
+@media (max-width: 670px) {
+
+    .product-slider__inner .slick-dots li,
+    .new-slider__inner .slick-dots li {
+        margin-right: 10px;
+    }
+
+    .product-slider__inner .slick-dots,
+    .new-slider__inner .slick-dots {
+        margin-top: 20px;
+    }
+
+    .new-slider__inner .slick-dots {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .product-slider__inner .slick-dots li,
+    .new-slider__inner .slick-dots li {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .product-slider__inner .slick-dots li button,
+    .new-slider__inner .slick-dots li button {
+        width: 12px;
+    }
+}

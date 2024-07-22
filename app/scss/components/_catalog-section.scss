@@ -70,6 +70,180 @@
             color: $accent;
         }
     }
+}
 
 
+// Media =========================
+
+@media (max-width: 1400px) {
+    .catalog-section__item {
+        background-position: -20px 20px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1270px) {
+    .catalog-section__item {
+        background-position: -70px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .catalog-section__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-section__item {
+        background-position: 50px -20px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .catalog-section__item {
+        background-position: 0 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .catalog-section__item {
+        background-position: -40px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .catalog-section__item {
+        background-position: -100px 50px;
+    }
+}
+
+@media (max-width: 670px) {
+    .catalog-section__inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .catalog-section__item {
+        max-width: 100%;
+        background-position: 116px 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .catalog-section__item {
+        background-position: 46px 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .catalog-section__inner {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 540px) {
+    .catalog-section__item {
+        background-position: 16px 10px;
+    }
+}
+
+@media (max-width: 475px) {
+    .catalog-section__item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+        }
+    }
+
+    .catalog-section__item-content {
+        margin: 0 auto 110px;
+        max-width: 165px;
+    }
+
+    .catalog-section__item--knives {
+        background-image: none;
+    }
+
+    .catalog-section__item--knives:after {
+        background-image: url('../images/catalog/catalog-knives.png');
+        width: 326px;
+        height: 333px;
+        rotate: 270deg;
+
+        top: 270px;
+        right: -22px;
+    }
+
+    .catalog-section__item--shortblade {
+        background-image: none;
+    }
+
+    .catalog-section__item--shortblade:after {
+        background-image: url('../images/catalog/catalog-shortblades.png');
+        width: 295px;
+        height: 256px;
+        rotate: 78deg;
+        top: 90px;
+        left: -70px;
+    }
+
+    .catalog-section__item--longblade {
+        background-image: none;
+    }
+
+    .catalog-section__item--longblade:after {
+        background-image: url('../images/catalog/catalog-longblades.png');
+        width: 426px;
+        height: 273px;
+        rotate: 325deg;
+        top: 300px;
+        right: 30%;
+    }
+
+    .catalog-section__item--souvenire {
+        background-image: none;
+    }
+
+    .catalog-section__item--souvenire:after {
+        background-image: url('../images/catalog/catalog-souvenire.png');
+        width: 386px;
+        height: 183px;
+        rotate: 365deg;
+        top: 280px;
+        right: 30%;
+    }
+
+    .catalog-section__item--other {
+        background-image: none;
+    }
+
+    .catalog-section__item--other:after {
+        background-image: url('../images/catalog/catalog-other.png');
+        width: 406px;
+        height: 273px;
+        rotate: 307deg;
+        top: 260px;
+        right: -30px;
+    }
+
+    .catalog-section__item--workshop {
+        background-image: none;
+    }
+
+    .catalog-section__item--workshop:after {
+        background-image: url('../images/catalog/catalog-workshop.png');
+        width: 366px;
+        height: 223px;
+        rotate: 357deg;
+        top: 255px;
+        right: -10px;
+    }
 }
