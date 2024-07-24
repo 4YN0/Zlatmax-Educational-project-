@@ -12,6 +12,8 @@ const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 const svgSprite = require('gulp-svg-sprite');
 const include = require('gulp-include');
 const rigger = require('gulp-rigger');
@@ -61,18 +63,26 @@ function images() {
     .pipe(dest('app/images'))
 }
 
-
 function sprite() {
-  return src('app/images/icons/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: '../sprite.svg',
-          example: true
-        }
-      }
-    }))
-    .pipe(dest('app/images'))
+    return src('app/images/icons/*.svg')
+        .pipe(cheerio({
+            run: function($) {
+                $('[fill]').removeAttr('fill');
+                $('[stroke]').removeAttr('stroke');
+                $('[style]').removeAttr('style');
+            },
+            parserOptions: { xmlMode: true }
+        }))
+        .pipe(replace('&gt;', '>'))
+        .pipe(svgSprite({
+            mode: {
+                stack: {
+                    sprite: '../sprite.svg',
+                    example: true
+                }
+            }
+        }))
+        .pipe(dest('app/images'))
 }
 
 

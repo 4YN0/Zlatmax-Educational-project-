@@ -17,6 +17,11 @@ $red: #E7401B;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: 3px;
+
+    @media (max-width: 475px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 %subtitle {
