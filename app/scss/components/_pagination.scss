@@ -1,7 +1,7 @@
 .pagination {
     display: flex;
     align-items: center;
-    
+
     .pagination__list {
         margin: 0px 15px;
     }
@@ -67,5 +67,22 @@
         svg {
             fill: $gray;
         }
+    }
+}
+
+/* Media
+================ */
+
+@media (max-width: 375px) {
+    .pagination__item {
+        padding: 0 10px;
+    }
+
+    .pagination__link {
+        font-size: 14px;
+    }
+
+    .pagination__link--active {
+        padding: 8px 14px;
     }
 }

@@ -70,10 +70,6 @@
 
         transition: all .2s;
     }
-
-    // &__auth svg.header-top__auth-icon {
-    //     fill: red;
-    // }
 }
 
 /* header__main
@@ -383,6 +379,7 @@
     .header-top__auth-icon,
     .header-top__icon {
         margin-right: 0;
+        overflow: hidden;
     }
 
     .user-nav__cart {
@@ -394,6 +391,7 @@
         height: 27px;
 
         fill: #fff;
+        path: #fff;
     }
 
     .user-nav__cart-box span {
@@ -463,4 +461,3 @@
     }
 }
 
-@media (max-width: 860px) {}

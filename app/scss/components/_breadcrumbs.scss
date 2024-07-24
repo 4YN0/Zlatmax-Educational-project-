@@ -45,3 +45,13 @@
         color: $accent;
     }
 }
+
+
+/* Media
+================ */
+
+@media (max-width: 475px) {
+    .breadcrumbs {
+        font-size: 14px;
+    }
+}

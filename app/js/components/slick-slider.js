@@ -26,8 +26,32 @@ $(function () {
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1310,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 1010,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
 });
@@ -40,8 +64,39 @@ $(function () {
         dots: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 1010,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
 });

@@ -7,6 +7,11 @@
         padding: 20px 20px 30px;
     }
 
+    &__img img {
+        width: 100%;
+        max-width: 100%;
+    }
+
     &__title {
         display: inline-block;
 
@@ -45,6 +50,7 @@
         padding-bottom: 15px;
 
         border-bottom: 1px solid $gray;
+        z-index: 7;
 
         /* RateYo */
 
@@ -90,4 +96,32 @@
         display: flex;
         align-items: center;
     }
+}
+
+
+/* Media
+================ */
+
+@media (max-width: 1010px) {
+    .product-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .product-card img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .product-card__info {
+        padding: 20px 0 0;
+    }
+
+    .product-card__info-box { 
+        padding: 0 20px;
+    }  
 }

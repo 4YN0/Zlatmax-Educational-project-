@@ -106,3 +106,25 @@ $('#rating-heading .shop-filter__heading--close').on('click', function () {
     $(this).siblings().slideToggle();
     $(this).toggleClass('shop-filter__heading--close')
 });
+
+
+// mobile filters open/close //
+
+$('.shop-filter__btn').on('click', function() {
+    $('.shop-filter').toggleClass('shop-filter--active');
+    $('.shop__results').toggleClass('shop__results--active');
+    $('.shop__items').toggleClass('shop__items--grid-1-сard');
+});
+
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 200) {
+            $('.shop-filter').addClass('shop-filter--fixed');
+        } else {
+            $('.shop-filter').removeClass('shop-filter--fixed');
+        }
+    });
+
+
+
+
