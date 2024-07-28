@@ -110,6 +110,48 @@ $(function () {
         slidesToScroll: 1,
         draggable: false,
         arrows: false,
+        adaptiveHeight: true,
+
+        responsive: [
+            {
+                breakpoint: 1530,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1170,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    vertical: true
+                }
+            },
+            {
+                breakpoint: 940,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    vertical: true
+                }
+            },
+            {
+                breakpoint: 740,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    
+                }
+            }
+        ]
     });
 
     $('.product-page__big').slick({
@@ -117,7 +159,6 @@ $(function () {
         draggable: false,
         arrows: false,
         fade: true,
-        vertical: false,
 
         responsive: [
             {
@@ -129,3 +170,15 @@ $(function () {
         ]
     });
 });
+
+// $(document).ready(function () {
+//     var slider = $('.product-page__thumbs');
+
+//     slider.slick();
+
+//     // Измените отступы между слайдами на 20 пикселей
+//     slider.find('.slick-slide').css('margin', '0 20px');
+
+//     // Перерисуйте слайдер
+//     slider.slick('setPosition');
+// });
