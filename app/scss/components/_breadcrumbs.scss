@@ -1,6 +1,11 @@
 .breadcrumbs {
     overflow-x: auto;
 
+    &__list {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
     &__item {
         display: inline-block;
         padding-right: 25px;

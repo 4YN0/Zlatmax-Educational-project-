@@ -153,3 +153,13 @@
 
     z-index: 9999;
 }
+
+/* Media
+================ */
+
+@media (max-width: 740px) {
+    .tab {
+        font-size: 16px;
+        padding: 0 0 20px 0;
+    }
+}

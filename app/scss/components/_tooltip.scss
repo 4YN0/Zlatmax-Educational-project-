@@ -58,3 +58,11 @@
         bottom: -1px;
     }
 }
+
+@media (max-width: 1170px) {
+    .tooltip-content {
+        min-width: 261px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
