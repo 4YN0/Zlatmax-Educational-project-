@@ -63,47 +63,6 @@ function images() {
         .pipe(dest('app/images'))
 }
 
-// function sprite() {
-//     return src('app/images/icons/*.svg')
-//         .pipe(cheerio({
-//             run: function($) {
-//                 $('[fill]').removeAttr('fill');
-//                 $('[stroke]').removeAttr('stroke');
-//                 $('[style]').removeAttr('style');
-//             },
-//             parserOptions: { xmlMode: true }
-//         }))
-//         .pipe(replace('&gt;', '>'))
-//         .pipe(svgSprite({
-//             mode: {
-//                 stack: {
-//                     mode: "symbols",
-//                     sprite: '../sprite.svg',
-//                     preview: false,
-//                     example: true,
-//                     selector: "icon-%f",
-//                     svg: {
-//                         symbols: 'symbol_sprite.html'
-//                     }
-//                 }
-//             }
-//         }))
-//     .pipe(dest('app/images'))
-// }
-
-// function sprite() {
-//     return src('app/images/*.svg')
-//         .pipe(svgSprite({
-//             mode: {
-//                 stack: {
-//                     sprite: '../sprite.svg',
-//                     example: true
-//                 }
-//             }
-//         }))
-//         .pipe(dest('app/images/'))
-// }
-
 function sprite() {
     return src('app/images/icons/*.svg')
         .pipe(cheerio({
